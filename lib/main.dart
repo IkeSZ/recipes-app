@@ -12,6 +12,14 @@ class MyApp extends StatelessWidget {
       title: 'Vamos Cozinhar?',
       theme: ThemeData(
         primaryColor: Colors.orangeAccent,
+
+        fontFamily: 'Raleway',
+        textTheme: ThemeData.light().textTheme.copyWith(
+          headline6: TextStyle(
+            fontSize: 20,
+            fontFamily: 'RobotoCondensed'
+          ),
+        ),
       ),
 
       home: Categories(),

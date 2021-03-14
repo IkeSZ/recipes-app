@@ -12,4 +12,5 @@ const DUMMY_CATEGORIES = const [
   Category(id: 'c7', title: 'Asiática', color: Colors.pink),
   Category(id: 'c8', title: 'Francesa', color: Colors.teal),
   Category(id: 'c9', title: 'Verão', color: Colors.indigoAccent),
+  Category(id: 'c10', title: 'Exótica', color: Colors.deepPurple),
 ];
