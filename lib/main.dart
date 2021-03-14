@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+// Screens
+import 'screens/categories.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -11,26 +14,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.orangeAccent,
       ),
 
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  @override
-  _MyHomePage createState() => _MyHomePage();
-}
-
-class _MyHomePage extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext ctx) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Vamos Cozinhar?'),
-      ),
-      body: Center(
-        child: Text('Navegar é preciso!!!'),
-      ),
+      home: Categories(),
     );
   }
 }
