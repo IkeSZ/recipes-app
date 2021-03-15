@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'screens/categories.dart';
 import 'screens/categoriesMeals.dart';
 import 'screens/mealDetail.dart';
+import 'screens/page404.dart';
 
 // Routes
 import 'routes/appRoutes.dart';
@@ -31,6 +32,14 @@ class MyApp extends StatelessWidget {
         AppRoutes.HOME: (_) => Categories(),
         AppRoutes.CATEGORIES_MEALS: (_) => CategoriesMealsScreen(),
         AppRoutes.MEAL_DETAIL: (_) => MealDetail(),
+      },
+
+      onUnknownRoute: (_) {
+        return MaterialPageRoute(
+          builder: (_) {
+            return Page404();
+          }
+        );
       },
     );
   }
