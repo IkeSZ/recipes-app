@@ -9,12 +9,7 @@ import '../data/dummyData.dart';
 class Categories extends StatelessWidget {
   @override
   Widget build(BuildContext ctx) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Vamos Cozinhar?', style: TextStyle(color: Colors.white)),
-      ),
-
-      body: GridView(
+    return GridView(
         padding: const EdgeInsets.all(20),
 
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
@@ -27,7 +22,6 @@ class Categories extends StatelessWidget {
         children: DUMMY_CATEGORIES.map((category) {
           return CategoryItem(category);
         }).toList(),
-      ),
-    );
+      );
   }
 }
