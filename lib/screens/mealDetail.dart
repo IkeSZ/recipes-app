@@ -12,7 +12,7 @@ class MealDetail extends StatelessWidget {
     );
   }
 
-  Widget _createSectionContainer({Widget child}) {
+  Widget _createSectionContainer({ Widget child }) {
     return Container(
         width: 350,
         height: 230,
@@ -92,6 +92,14 @@ class MealDetail extends StatelessWidget {
               )
             ],
           ),
-        ));
+        ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.orangeAccent,
+        child: Icon(Icons.star),
+        onPressed: () {
+          Navigator.of(ctx).pop(meal);
+        },
+      ),
+    );
   }
 }
